@@ -124,7 +124,6 @@
     <form class="site-form" action="https://formsubmit.co/tony@trocino.media" method="POST" style="display:flex; flex-direction:column; gap:28px;">
       <input type="hidden" name="_subject" value="Franchise Inquiry — Kiki Kafe">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://kikikafe.net/franchise.html?submitted=true">
 
       <!-- Contact Info -->
       <div style="display:flex; flex-direction:column; gap:6px; padding-bottom:28px; border-bottom:1px solid #e0dbd4;">
@@ -244,9 +243,21 @@
         <button type="submit" class="btn-submit">Submit Inquiry</button>
       </div>
 
+      <p id="form-error" style="display:none; margin:12px 0 0; font-size:13px; font-weight:300; color:#c0392b;">Something went wrong — please try again or email <a href="mailto:mgmt@kikikafe.net" style="color:#c0392b;">mgmt@kikikafe.net</a>.</p>
+
       <p style="margin:0; font-size:13px; font-weight:300; color:rgba(0,0,0,.4); line-height:1.6;">We review all inquiries and respond within 5–7 business days. For urgent questions, email us at <a href="mailto:mgmt@kikikafe.net" style="color:#4d8145; text-decoration:none;">mgmt@kikikafe.net</a>.</p>
 
     </form>
+
+    <div id="form-success" style="display:none; flex-direction:column; align-items:center; text-align:center; gap:20px; padding:48px 24px;">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="26" cy="26" r="25" stroke="#4d8145" stroke-width="1.5"/>
+        <polyline points="16,26 22,33 36,18" stroke="#4d8145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <h3 style="margin:0; font-weight:300; font-size:28px; letter-spacing:.14em; text-transform:uppercase; color:#111;">Inquiry Sent</h3>
+      <p style="margin:0; font-weight:300; font-size:15px; line-height:1.7; color:rgba(0,0,0,.5); max-width:420px;">We'll be in touch within 5–7 business days to discuss the opportunity.</p>
+    </div>
+
   </div>
 </section>
 
@@ -354,6 +365,40 @@
     btn.addEventListener('click', openMenu);
     close.addEventListener('click', closeMenu);
     menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+  })();
+</script>
+
+<script>
+  (function () {
+    var form = document.querySelector('form.site-form');
+    var success = document.getElementById('form-success');
+    var errorMsg = document.getElementById('form-error');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('.btn-submit');
+      var orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      if (errorMsg) errorMsg.style.display = 'none';
+      fetch('https://formsubmit.co/ajax/tony@trocino.media', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.success === 'true' || data.success === true) {
+          form.style.display = 'none';
+          if (success) { success.style.display = 'flex'; }
+        } else { throw new Error(); }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = orig;
+        if (errorMsg) errorMsg.style.display = 'block';
+      });
+    });
   })();
 </script>
 
