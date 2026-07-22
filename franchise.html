@@ -121,9 +121,8 @@
       <h2 style="margin:0; font-weight:300; font-size:clamp(26px,4vw,38px); letter-spacing:.14em; text-transform:uppercase; color:#111;">Start the Conversation</h2>
     </div>
 
-    <form class="site-form" action="https://formsubmit.co/tony@trocino.media" method="POST" style="display:flex; flex-direction:column; gap:28px;">
-      <input type="hidden" name="_subject" value="Franchise Inquiry — Kiki Kafe">
-      <input type="hidden" name="_captcha" value="false">
+    <form class="site-form" method="POST" style="display:flex; flex-direction:column; gap:28px;">
+      <input type="hidden" name="_form" value="franchise">
 
       <!-- Contact Info -->
       <div style="display:flex; flex-direction:column; gap:6px; padding-bottom:28px; border-bottom:1px solid #e0dbd4;">
@@ -381,14 +380,16 @@
       btn.disabled = true;
       btn.textContent = 'Sending…';
       if (errorMsg) errorMsg.style.display = 'none';
-      fetch('https://formsubmit.co/ajax/tony@trocino.media', {
+      var obj = {};
+      new FormData(form).forEach(function (v, k) { obj[k] = v; });
+      fetch('/api/submit', {
         method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
+        body: JSON.stringify(obj),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
       })
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        if (data.success === 'true' || data.success === true) {
+        if (data.success) {
           form.style.display = 'none';
           if (success) { success.style.display = 'flex'; }
         } else { throw new Error(); }

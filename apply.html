@@ -23,38 +23,6 @@
 <meta name="twitter:image" content="https://kikikafe.net/uploads/kiki-header_test_v2.png">
 <meta name="theme-color" content="#000000">
 <style>
-  .file-upload-wrapper {
-    position: relative;
-    width: 100%;
-  }
-  .file-upload-input {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-  }
-  .file-upload-display {
-    width: 100%;
-    background: #f7f4f0;
-    border: 1px dashed #c8c3bc;
-    border-radius: 2px;
-    padding: 28px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transition: border-color .25s;
-    cursor: pointer;
-    text-align: center;
-  }
-  .file-upload-wrapper:hover .file-upload-display,
-  .file-upload-wrapper:focus-within .file-upload-display {
-    border-color: #4d8145;
-  }
-  .file-upload-display.has-file { border-style: solid; border-color: #4d8145; }
   @media (max-width: 560px) {
     #page-header { padding: 130px 5vw 48px !important; }
     #apply-section { padding: 40px 5vw 60px !important; }
@@ -107,9 +75,8 @@
 <!-- ===== FORM ===== -->
 <section id="apply-section" style="padding:80px 6vw 100px; background:url('uploads/Kiki-Coffee-Bean_BG_Light.jpg') center/cover fixed;">
   <div style="max-width:720px; margin:0 auto; background:#fff; border-radius:4px; padding:48px; box-shadow:0 2px 40px rgba(0,0,0,.08);">
-    <form class="site-form" action="https://formsubmit.co/tony@trocino.media" method="POST" enctype="multipart/form-data" style="display:flex; flex-direction:column; gap:28px;">
-      <input type="hidden" name="_subject" value="New Job Application — Kiki Kafe">
-      <input type="hidden" name="_captcha" value="false">
+    <form class="site-form" method="POST" style="display:flex; flex-direction:column; gap:28px;">
+      <input type="hidden" name="_form" value="apply">
 
       <!-- Personal Info -->
       <div style="display:flex; flex-direction:column; gap:6px; padding-bottom:28px; border-bottom:1px solid #e0dbd4;">
@@ -189,15 +156,8 @@
       </div>
 
       <div class="form-field">
-        <label>Upload Resume <span style="color:rgba(0,0,0,.35); font-size:9px; letter-spacing:.1em;">(PDF, DOC, or DOCX — max 5 MB)</span></label>
-        <div class="file-upload-wrapper" id="resume-wrapper">
-          <input class="file-upload-input" type="file" id="resume" name="Resume" accept=".pdf,.doc,.docx">
-          <div class="file-upload-display" id="resume-display">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.25)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-            <span id="resume-label" style="font-size:13px; font-weight:300; color:rgba(0,0,0,.45);">Click or drag to upload your resume</span>
-            <span style="font-size:11px; font-weight:300; color:rgba(0,0,0,.3);">PDF, DOC, DOCX</span>
-          </div>
-        </div>
+        <label for="resume-link">Resume Link <span style="color:rgba(0,0,0,.35); font-size:9px; letter-spacing:.1em;">(Optional — Google Drive, Dropbox, or LinkedIn)</span></label>
+        <input type="url" id="resume-link" name="Resume Link" placeholder="https://drive.google.com/...">
       </div>
 
       <!-- Submit -->
@@ -363,14 +323,16 @@
       btn.disabled = true;
       btn.textContent = 'Sending…';
       if (errorMsg) errorMsg.style.display = 'none';
-      fetch('https://formsubmit.co/ajax/tony@trocino.media', {
+      var obj = {};
+      new FormData(form).forEach(function (v, k) { obj[k] = v; });
+      fetch('/api/submit', {
         method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
+        body: JSON.stringify(obj),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
       })
       .then(function (r) { return r.json(); })
       .then(function (data) {
-        if (data.success === 'true' || data.success === true) {
+        if (data.success) {
           form.style.display = 'none';
           if (success) { success.style.display = 'flex'; }
         } else { throw new Error(); }
