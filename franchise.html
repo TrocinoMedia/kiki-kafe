@@ -23,67 +23,6 @@
 <meta name="twitter:image" content="https://kikikafe.net/uploads/kiki-header_test_v2.png">
 <meta name="theme-color" content="#000000">
 <style>
-  .fran-form label {
-    display: block;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: .26em;
-    text-transform: uppercase;
-    color: rgba(0,0,0,.5);
-    margin-bottom: 8px;
-  }
-  .fran-form input,
-  .fran-form select,
-  .fran-form textarea {
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    color: #111;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    padding: 14px 16px;
-    outline: none;
-    transition: border-color .25s;
-    -webkit-appearance: none;
-    appearance: none;
-  }
-  .fran-form input::placeholder,
-  .fran-form textarea::placeholder {
-    color: rgba(0,0,0,.3);
-  }
-  .fran-form input:focus,
-  .fran-form select:focus,
-  .fran-form textarea:focus {
-    border-color: #4d8145;
-  }
-  .fran-form select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='rgba(0,0,0,0.4)' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    padding-right: 40px;
-    cursor: pointer;
-  }
-  .fran-form select option { background: #fff; color: #111; }
-  .fran-form textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .form-field { display: flex; flex-direction: column; }
-  .btn-submit {
-    background: #4d8145;
-    color: #000;
-    border: 1px solid #4d8145;
-    border-radius: 1px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    padding: 16px 40px;
-    cursor: pointer;
-    transition: background .25s, transform .25s;
-  }
-  .btn-submit:hover { background: #5e9e55; transform: translateY(-2px); }
   .stat-card {
     background: #0d0d0d;
     border: 1px solid #222;
@@ -97,7 +36,6 @@
     [data-grid="stats"] { grid-template-columns: 1fr 1fr !important; }
   }
   @media (max-width: 640px) {
-    .form-row { grid-template-columns: 1fr !important; }
     [data-grid="stats"] { grid-template-columns: 1fr !important; }
   }
   @media (max-width: 560px) {
@@ -183,7 +121,7 @@
       <h2 style="margin:0; font-weight:300; font-size:clamp(26px,4vw,38px); letter-spacing:.14em; text-transform:uppercase; color:#111;">Start the Conversation</h2>
     </div>
 
-    <form class="fran-form" action="https://formsubmit.co/tony@trocino.media" method="POST" style="display:flex; flex-direction:column; gap:28px;">
+    <form class="site-form" action="https://formsubmit.co/tony@trocino.media" method="POST" style="display:flex; flex-direction:column; gap:28px;">
       <input type="hidden" name="_subject" value="Franchise Inquiry — Kiki Kafe">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://kikikafe.net/franchise.html?submitted=true">

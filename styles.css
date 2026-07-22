@@ -62,9 +62,6 @@ body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-seri
 .btn-primary:hover { background: #5e9e55 !important; transform: translateY(-2px); }
 .btn-ghost { transition: background .25s, transform .25s; }
 .btn-ghost:hover { background: #5e9e55 !important; transform: translateY(-2px); }
-#doordash-btn:hover { background: #FF3008 !important; border-color: #FF3008 !important; transform: translateY(-2px); }
-.btn-outline-gold { transition: background .25s, transform .25s; }
-.btn-outline-gold:hover { background: #5e9e55 !important; transform: translateY(-2px); }
 
 /* Cards */
 .menu-card { transition: transform .3s ease, border-color .3s ease; }
@@ -157,9 +154,40 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
 .faq-icon { transition: transform .25s; flex-shrink: 0; }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
 
+/* ===== Shared form styles ===== */
+.site-form label { display: block; font-size: 10px; font-weight: 500; letter-spacing: .26em; text-transform: uppercase; color: rgba(0,0,0,.5); margin-bottom: 8px; }
+.site-form input,
+.site-form select,
+.site-form textarea { width: 100%; background: #fff; border: 1px solid #ddd; border-radius: 2px; color: #111; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 15px; padding: 14px 16px; outline: none; transition: border-color .25s; -webkit-appearance: none; appearance: none; }
+.site-form input::placeholder,
+.site-form textarea::placeholder { color: rgba(0,0,0,.3); }
+.site-form input:focus,
+.site-form select:focus,
+.site-form textarea:focus { border-color: #4d8145; }
+.site-form select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='rgba(0,0,0,0.4)' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; cursor: pointer; }
+.site-form select option { background: #fff; color: #111; }
+.site-form textarea { resize: vertical; min-height: 120px; line-height: 1.6; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.form-field { display: flex; flex-direction: column; }
+.checkbox-group { display: flex; flex-direction: column; gap: 10px; }
+.checkbox-label { display: flex !important; align-items: center; gap: 10px; cursor: pointer; font-size: 14px !important; font-weight: 300 !important; letter-spacing: .02em !important; text-transform: none !important; color: rgba(0,0,0,.65) !important; margin-bottom: 0 !important; }
+.checkbox-label input[type="checkbox"] { width: 18px; height: 18px; min-width: 18px; padding: 0; accent-color: #4d8145; cursor: pointer; }
+.btn-submit { background: #4d8145; color: #000; border: 1px solid #4d8145; border-radius: 1px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; padding: 16px 40px; cursor: pointer; transition: background .25s, transform .25s; }
+.btn-submit:hover { background: #5e9e55; transform: translateY(-2px); }
+.section-divider { display: flex; flex-direction: column; gap: 6px; padding-top: 8px; padding-bottom: 28px; border-bottom: 1px solid #e0dbd4; }
+.section-label { font-size: 11px; font-weight: 500; letter-spacing: .34em; text-transform: uppercase; color: #4d8145; }
+
 @media (max-width: 900px) {
   [data-grid="footer"] { grid-template-columns: 1fr !important; gap: 36px !important; }
   [data-grid="reviews"] { grid-template-columns: 1fr !important; }
+  [data-grid="menu"] { grid-template-columns: repeat(2, 1fr) !important; }
+  [data-grid="two-col"] { grid-template-columns: 1fr !important; gap: 48px !important; }
+  [data-grid="location-info"] { grid-template-columns: 1fr !important; }
+  .form-row-3 { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 640px) {
+  .form-row, .form-row-3 { grid-template-columns: 1fr !important; }
 }
 /* Hamburger button */
 .hamburger {
@@ -236,6 +264,14 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
 .mobile-cta-link:hover { background: #5e9e55; }
 
 @media (max-width: 560px) {
+  [data-grid="menu"] { grid-template-columns: 1fr !important; }
+  #top { padding: 116px 5vw 60px !important; }
+  #menu { padding: 72px 5vw !important; }
+  #kart { padding: 72px 5vw !important; }
+  #location { padding: 72px 5vw !important; }
+  #faq { padding: 72px 5vw !important; }
+  #reviews { padding: 72px 5vw !important; background-attachment: scroll !important; }
+  #kart, #faq { background-attachment: scroll !important; }
   [data-nav-text] { display: none !important; }
   [data-nav-social] { display: none !important; }
   .btn-order { display: none !important; }

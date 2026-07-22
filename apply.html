@@ -23,76 +23,6 @@
 <meta name="twitter:image" content="https://kikikafe.net/uploads/kiki-header_test_v2.png">
 <meta name="theme-color" content="#000000">
 <style>
-  .apply-form label {
-    display: block;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: .26em;
-    text-transform: uppercase;
-    color: rgba(0,0,0,.5);
-    margin-bottom: 8px;
-  }
-  .apply-form input,
-  .apply-form select,
-  .apply-form textarea {
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    color: #111;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    padding: 14px 16px;
-    outline: none;
-    transition: border-color .25s;
-    -webkit-appearance: none;
-    appearance: none;
-  }
-  .apply-form input::placeholder,
-  .apply-form textarea::placeholder {
-    color: rgba(0,0,0,.3);
-  }
-  .apply-form input:focus,
-  .apply-form select:focus,
-  .apply-form textarea:focus {
-    border-color: #4d8145;
-  }
-  .apply-form select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='rgba(0,0,0,0.4)' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    padding-right: 40px;
-    cursor: pointer;
-  }
-  .apply-form select option {
-    background: #fff;
-    color: #111;
-  }
-  .apply-form textarea { resize: vertical; min-height: 120px; line-height: 1.6; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .form-field { display: flex; flex-direction: column; }
-  .checkbox-group { display: flex; flex-direction: column; gap: 10px; }
-  .checkbox-label {
-    display: flex !important;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 14px !important;
-    font-weight: 300 !important;
-    letter-spacing: .02em !important;
-    text-transform: none !important;
-    color: rgba(0,0,0,.65) !important;
-    margin-bottom: 0 !important;
-  }
-  .checkbox-label input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    min-width: 18px;
-    padding: 0;
-    accent-color: #4d8145;
-    cursor: pointer;
-  }
   .file-upload-wrapper {
     position: relative;
     width: 100%;
@@ -125,24 +55,6 @@
     border-color: #4d8145;
   }
   .file-upload-display.has-file { border-style: solid; border-color: #4d8145; }
-  .btn-submit {
-    background: #4d8145;
-    color: #000;
-    border: 1px solid #4d8145;
-    border-radius: 1px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    padding: 16px 40px;
-    cursor: pointer;
-    transition: background .25s, transform .25s;
-  }
-  .btn-submit:hover { background: #5e9e55; transform: translateY(-2px); }
-  @media (max-width: 640px) {
-    .form-row { grid-template-columns: 1fr !important; }
-  }
   @media (max-width: 560px) {
     #page-header { padding: 130px 5vw 48px !important; }
     #apply-section { padding: 40px 5vw 60px !important; }
@@ -195,7 +107,7 @@
 <!-- ===== FORM ===== -->
 <section id="apply-section" style="padding:80px 6vw 100px; background:url('uploads/Kiki-Coffee-Bean_BG_Light.jpg') center/cover fixed;">
   <div style="max-width:720px; margin:0 auto; background:#fff; border-radius:4px; padding:48px; box-shadow:0 2px 40px rgba(0,0,0,.08);">
-    <form class="apply-form" action="https://formsubmit.co/tony@trocino.media" method="POST" enctype="multipart/form-data" style="display:flex; flex-direction:column; gap:28px;">
+    <form class="site-form" action="https://formsubmit.co/tony@trocino.media" method="POST" enctype="multipart/form-data" style="display:flex; flex-direction:column; gap:28px;">
       <input type="hidden" name="_subject" value="New Job Application — Kiki Kafe">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://kikikafe.net/apply.html?submitted=true">

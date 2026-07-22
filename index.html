@@ -68,23 +68,6 @@
   ]
 }
 </script>
-<style>
-  @media (max-width: 900px) {
-    [data-grid="menu"] { grid-template-columns: repeat(2, 1fr) !important; }
-    [data-grid="two-col"] { grid-template-columns: 1fr !important; gap: 48px !important; }
-    [data-grid="location-info"] { grid-template-columns: 1fr !important; }
-  }
-  @media (max-width: 560px) {
-    [data-grid="menu"] { grid-template-columns: 1fr !important; }
-    #top { padding: 116px 5vw 60px !important; }
-    #menu { padding: 72px 5vw !important; }
-    #kart { padding: 72px 5vw !important; }
-    #location { padding: 72px 5vw !important; }
-    #faq { padding: 72px 5vw !important; }
-    #reviews { padding: 72px 5vw !important; background-attachment: scroll !important; }
-    #kart, #faq { background-attachment: scroll !important; }
-  }
-</style>
 </head>
 <body>
 
@@ -125,7 +108,7 @@
 
 <!-- ===== HERO ===== -->
 <section id="top" style="position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:160px 6vw 80px; background-color:#000;">
-  <video autoplay muted loop playsinline style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+  <video autoplay muted loop playsinline preload="metadata" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
     <source src="uploads/Web-Banner-Video.mp4" type="video/mp4">
   </video>
   <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.5) 40%, rgba(0,0,0,.82) 100%); z-index:1;"></div>
@@ -161,42 +144,42 @@
     <div data-grid="menu-photo" id="menu-track" style="display:flex; gap:5px; padding:0 5vw; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; flex:1; min-width:0;">
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Caramel-Macchiato_3_2000px_72dpi.jpg" alt="Espresso Bar at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Caramel-Macchiato_3_2000px_72dpi.jpg" alt="Espresso Bar at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Espresso Bar</span><p>Lattes, cappuccinos & signature espresso drinks</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Matcha_Iced_2000px_72dpi.jpg" alt="Matcha at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Matcha_Iced_2000px_72dpi.jpg" alt="Matcha at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Matcha</span><p>Ceremonial-grade green tea lattes, iced or hot</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Refresher_Purpul-Haze_2000px_72dpi.jpg" alt="Refreshers at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Refresher_Purpul-Haze_2000px_72dpi.jpg" alt="Refreshers at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Refreshers</span><p>Fruit-forward iced coolers, caffeine-free</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Red-Bull-Infusion_Strawberry-Vanilla_2000px_72dpi.jpg" alt="Red Bull Infusions at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Red-Bull-Infusion_Strawberry-Vanilla_2000px_72dpi.jpg" alt="Red Bull Infusions at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Red Bull Infusions</span><p>Energy drinks mixed with fruit & bold flavors</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Sandwich_Mozz-Garden_2000px_72dpi.jpg" alt="Sandwiches at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Sandwich_Mozz-Garden_2000px_72dpi.jpg" alt="Sandwiches at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Sandwiches</span><p>Fresh sandwiches on artisan bread, made to order</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Croissant_Nutella_2000px_72dpi.jpg" alt="Pastries at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Croissant_Nutella_2000px_72dpi.jpg" alt="Pastries at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Pastries</span><p>Croissants, danishes, bagels, scones & more</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Tirimisu_4_2000px_72dpi.jpg" alt="Desserts at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Tirimisu_4_2000px_72dpi.jpg" alt="Desserts at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Desserts</span><p>Cheesecake, cake pops & indulgent sweet bites</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/Acai-Bowl_Matcha_2000px_72dpi.jpg" alt="Acaí Bowls at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Acai-Bowl_Matcha_2000px_72dpi.jpg" alt="Acaí Bowls at Kiki Kafe" loading="lazy" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Acaí Bowls</span><p>Fresh acaí topped with fruit, granola & more</p></div>
       </a>
 
