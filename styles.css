@@ -80,6 +80,9 @@ body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-seri
 .footer-order-link { transition: opacity .25s; }
 .footer-order-link:hover { opacity: .7; }
 
+/* Logo */
+img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
+
 /* Social icons */
 .social-icon { color: rgba(255,255,255,.6); transition: color .25s; display: flex; align-items: center; }
 .social-icon:hover { color: #fff; }
@@ -89,12 +92,9 @@ body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-seri
 .social-icon[aria-label="TikTok"]:hover { color: #fff; }
 
 /* Menu scroll arrows */
-.menu-scroll-wrap { position: relative; }
+.menu-scroll-wrap { display: flex; align-items: center; gap: 8px; padding: 0 12px; }
 .menu-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+  flex-shrink: 0;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -108,15 +108,11 @@ body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-seri
   box-shadow: 0 4px 24px rgba(0,0,0,.5);
   transition: background .2s ease, color .2s ease, transform .2s ease, opacity .25s ease;
 }
-.menu-arrow:hover { background: #4d8145; color: #fff; transform: translateY(-50%) scale(1.1); }
+.menu-arrow:hover { background: #4d8145; color: #fff; transform: scale(1.1); }
 #review-prev:hover, #review-next:hover { transform: scale(1.1); }
-.menu-arrow.prev { left: calc(5vw - 28px); }
-.menu-arrow.next { right: calc(5vw - 28px); }
 .menu-arrow.hidden { opacity: 0; pointer-events: none; }
 @media (max-width: 560px) {
-  .menu-arrow { width: 44px; height: 44px; }
-  .menu-arrow.prev { left: 8px; }
-  .menu-arrow.next { right: 8px; }
+  .menu-arrow { width: 40px; height: 40px; }
 }
 
 /* Menu photo grid — horizontal scroll row */
