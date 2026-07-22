@@ -81,6 +81,7 @@
     #kart { padding: 72px 5vw !important; }
     #location { padding: 72px 5vw !important; }
     #faq { padding: 72px 5vw !important; }
+    #reviews { padding: 72px 5vw !important; background-attachment: scroll !important; }
     #kart, #faq { background-attachment: scroll !important; }
   }
 </style>
@@ -95,7 +96,7 @@
 <!-- ===== NAV ===== -->
 <header id="site-header" style="position:fixed; top:34px; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:22px 6vw; background:transparent; transition:background .4s ease, padding .4s ease, border-color .4s ease; border-bottom:1px solid rgba(255,255,255,0);">
   <a href="#top" style="display:flex; align-items:center; text-decoration:none;">
-    <img id="header-logo" src="uploads/Kiki-Logo.svg" alt="Kiki Kafe" style="height:58px; width:auto; display:block;">
+    <img id="header-logo" src="uploads/Kiki-Logo.svg" alt="Kiki Kafe" style="height:72px; width:auto; display:block;">
   </a>
   <nav style="display:flex; align-items:center; gap:32px;">
     <div data-nav-text style="display:flex; align-items:center; gap:42px;">
@@ -131,12 +132,12 @@
   <div style="position:absolute; inset:0; background:radial-gradient(ellipse 70% 60% at 50% 45%, transparent 0%, rgba(0,0,0,.45) 100%); pointer-events:none; z-index:1;"></div>
   <div style="position:relative; z-index:2; max-width:900px; display:flex; flex-direction:column; align-items:center; gap:26px;">
     <span style="font-size:11px; font-weight:500; letter-spacing:.36em; text-transform:uppercase; color:rgba(255,255,255,.45);">The Mall At Partridge Creek</span>
-    <h1 style="margin:0; line-height:0;">
-      <img src="uploads/Meet-Me-At-Kiki_v2.png" alt="Meet Me At Kiki" style="width:min(620px,82vw); height:auto; display:block;">
+    <h1 style="margin:20px 0; line-height:0;">
+      <img src="uploads/meet-me-at-kiki.svg" alt="Meet Me At Kiki" style="width:min(340px,52vw); height:auto; display:block; filter:brightness(0) invert(1);">
     </h1>
     <p style="margin:0; font-family:'Inter',sans-serif; font-weight:300; font-size:16px; color:rgba(255,255,255,.55); letter-spacing:.01em;">Premium coffee, handcrafted daily.</p>
     <div style="display:flex; flex-direction:column; align-items:center; gap:14px; margin-top:14px;">
-      <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none; min-width:200px; text-align:center; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 34px; border:1px solid #4d8145; border-radius:1px;">Order Now</a>
+      <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none; min-width:200px; text-align:center; background:#4d8145; color:#000; font-weight:500; font-size:15px; letter-spacing:.14em; text-transform:uppercase; padding:20px 56px; border:1px solid #4d8145; border-radius:1px;">Order Now</a>
     </div>
   </div>
   <div style="position:absolute; bottom:0; left:0; right:0; height:35%; background:linear-gradient(to bottom, transparent, #000); z-index:1; pointer-events:none;"></div>
@@ -160,43 +161,43 @@
     <div data-grid="menu-photo" id="menu-track" style="display:flex; gap:5px; padding:0 5vw; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; flex:1; min-width:0;">
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/espresso.jpg" alt="Espresso Bar at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Caramel-Macchiato_3_2000px_72dpi.jpg" alt="Espresso Bar at Kiki Kafe" loading="lazy">
         <div class="menu-photo-overlay"><span>Espresso Bar</span><p>Lattes, cappuccinos & signature espresso drinks</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/matcha.jpg" alt="Matcha at Kiki Kafe" loading="lazy">
-        <div class="menu-photo-overlay"><span>Matcha</span><p>Ceremonial-grade green tea, iced or hot</p></div>
+        <img src="uploads/menu/Matcha_Iced_2000px_72dpi.jpg" alt="Matcha at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Matcha</span><p>Ceremonial-grade green tea lattes, iced or hot</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/refresher.jpg" alt="Refreshers at Kiki Kafe" loading="lazy">
-        <div class="menu-photo-overlay"><span>Refreshers</span><p>Fruit-forward iced coolers, lightly caffeinated</p></div>
+        <img src="uploads/menu/Refresher_Purpul-Haze_2000px_72dpi.jpg" alt="Refreshers at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Refreshers</span><p>Fruit-forward iced coolers, caffeine-free</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/redbull.jpg" alt="Red Bull Infusions at Kiki Kafe" loading="lazy">
-        <div class="menu-photo-overlay"><span>Red Bull Infusions</span><p>Energy drinks blended with fruit & bold flavors</p></div>
+        <img src="uploads/menu/Red-Bull-Infusion_Strawberry-Vanilla_2000px_72dpi.jpg" alt="Red Bull Infusions at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Red Bull Infusions</span><p>Energy drinks mixed with fruit & bold flavors</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/sandwich.jpg" alt="Sandwiches at Kiki Kafe" loading="lazy">
-        <div class="menu-photo-overlay"><span>Sandwiches</span><p>Pressed paninis & fresh-built bites on artisan bread</p></div>
+        <img src="uploads/menu/Sandwich_Mozz-Garden_2000px_72dpi.jpg" alt="Sandwiches at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Sandwiches</span><p>Fresh sandwiches on artisan bread, made to order</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/pastries.jpg" alt="Pastries at Kiki Kafe" loading="lazy">
-        <div class="menu-photo-overlay"><span>Pastries</span><p>Croissants & laminated favorites, baked fresh daily</p></div>
+        <img src="uploads/menu/Croissant_Nutella_2000px_72dpi.jpg" alt="Pastries at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Pastries</span><p>Croissants, danishes, bagels, scones & more</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/desserts.jpg" alt="Desserts at Kiki Kafe" loading="lazy">
+        <img src="uploads/menu/Tirimisu_4_2000px_72dpi.jpg" alt="Desserts at Kiki Kafe" loading="lazy">
         <div class="menu-photo-overlay"><span>Desserts</span><p>Cheesecake, cake pops & indulgent sweet bites</p></div>
       </a>
 
       <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" class="menu-photo-item">
-        <img src="uploads/menu/acai-bowls.jpg" alt="Acaí Bowls at Kiki Kafe" loading="lazy">
-        <div class="menu-photo-overlay"><span>Acaí Bowls</span><p>Fresh acaí topped with fruit, granola & honey</p></div>
+        <img src="uploads/menu/Acai-Bowl_Matcha_2000px_72dpi.jpg" alt="Acaí Bowls at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Acaí Bowls</span><p>Fresh acaí topped with fruit, granola & more</p></div>
       </a>
 
     </div>
@@ -206,8 +207,8 @@
     </button>
 
   </div>
-  <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:14px; margin-top:56px; padding:0 6vw 130px;">
-    <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none; text-align:center; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 40px; border:1px solid #4d8145; border-radius:1px;">Order Online</a>
+  <div class="menu-cta-wrap" style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:14px; margin-top:56px; padding:0 6vw 72px;">
+    <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none; text-align:center; background:#4d8145; color:#000; font-weight:500; font-size:15px; letter-spacing:.14em; text-transform:uppercase; padding:20px 56px; border:1px solid #4d8145; border-radius:1px;">Order Online</a>
   </div>
 </section>
 
@@ -328,7 +329,9 @@
   <div data-grid="two-col" style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center;">
     <div class="reveal" style="display:flex; flex-direction:column; gap:24px;">
       <span style="font-size:11px; font-weight:500; letter-spacing:.34em; text-transform:uppercase; color:#4d8145;">Mobile Coffee Experience</span>
-      <h2 style="margin:0; font-family:'Dancing Script',cursive; font-weight:700; font-size:clamp(44px,6vw,72px); line-height:1.05; color:#fff;">Bring Kiki To You</h2>
+      <h2 style="margin:0; line-height:0;">
+        <img src="uploads/bring-kiki-to-you.svg" alt="Bring Kiki To You" style="width:100%; max-width:480px; height:auto; display:block; filter:brightness(0) invert(1);">
+      </h2>
       <p style="margin:0; font-weight:300; font-size:16px; line-height:1.75; color:rgba(255,255,255,.6); max-width:460px;">The Kiki Kart brings our full barista experience anywhere you need it. From intimate weddings to corporate gatherings and private events, we craft premium espresso, lattes, and matcha on-site — turning any occasion into a moment worth remembering.</p>
       <a href="book-kart.html" class="btn-primary" style="align-self:flex-start; margin-top:8px; text-decoration:none; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 34px; border:1px solid #4d8145; border-radius:1px;">Book the Kart</a>
     </div>
@@ -457,8 +460,7 @@
 <footer style="border-top:1px solid #222; background:#000; padding:70px 6vw 32px;">
   <div data-grid="footer" style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:1.2fr 1fr 1.2fr; gap:48px;">
     <div style="display:flex; flex-direction:column; gap:18px; align-items:flex-start;">
-      <img src="uploads/Kiki-Logo.svg" alt="Kiki Kafe" style="height:72px; width:auto; display:block;">
-      <span style="font-family:'Dancing Script',cursive; font-weight:600; font-size:24px; color:rgba(255,255,255,.55);">Meet Me At Kiki</span>
+      <img src="uploads/meet-me-at-kiki_one-line.svg" alt="Meet Me At Kiki" style="width:300px; height:auto; filter:brightness(0) invert(1) opacity(.55);">
       <div style="display:flex; gap:16px; margin-top:4px;">
         <a href="https://www.instagram.com/meetmeatkiki" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
@@ -497,16 +499,19 @@
 
   (function () {
     var header = document.getElementById('site-header');
+    var logo   = document.getElementById('header-logo');
     function onScroll() {
       var mobile = window.innerWidth <= 560;
       if (window.scrollY > 40) {
         header.style.background = '#000';
         header.style.borderBottomColor = 'rgba(255,255,255,0.08)';
         header.style.padding = mobile ? '10px 5vw' : '16px 6vw';
+        logo.style.height = mobile ? '36px' : '46px';
       } else {
         header.style.background = 'transparent';
         header.style.borderBottomColor = 'rgba(255,255,255,0)';
         header.style.padding = mobile ? '14px 5vw' : '22px 6vw';
+        logo.style.height = mobile ? '50px' : '72px';
       }
     }
     window.addEventListener('scroll', onScroll, { passive: true });

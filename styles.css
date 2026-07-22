@@ -82,6 +82,7 @@ body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-seri
 
 /* Logo */
 img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
+#header-logo { transition: height .35s ease; }
 
 /* Social icons */
 .social-icon { color: rgba(255,255,255,.6); transition: color .25s; display: flex; align-items: center; }
@@ -240,7 +241,7 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
   .btn-order { display: none !important; }
   .hamburger { display: flex !important; }
   #site-header { padding: 14px 5vw !important; }
-  #header-logo { height: 44px !important; }
+  #header-logo { height: 50px; }
   footer { padding: 56px 5vw 24px !important; }
   /* Prevent iOS Safari from zooming on input focus */
   input, select, textarea { font-size: 16px !important; }
@@ -250,4 +251,41 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
   #top .btn-primary, #top .btn-ghost { width: 100% !important; min-width: unset !important; box-sizing: border-box !important; }
   /* Reduce map height on mobile */
   iframe { min-height: 280px !important; }
+
+  /* Menu section — 2-column grid on mobile */
+  .menu-scroll-wrap { display: block !important; padding: 0 !important; }
+  .menu-arrow { display: none !important; }
+  #menu-track {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 3px !important;
+    padding: 0 !important;
+    overflow-x: unset !important;
+    scroll-snap-type: unset !important;
+  }
+  .menu-photo-item {
+    width: auto !important;
+    min-width: unset !important;
+    flex-shrink: unset !important;
+    scroll-snap-align: none !important;
+  }
+  /* Always show label at bottom with gradient */
+  .menu-photo-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,.82) 0%, rgba(0,0,0,.2) 45%, transparent 70%) !important;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    padding: 14px !important;
+  }
+  .menu-photo-overlay span {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: none !important;
+    text-align: left !important;
+  }
+  .menu-photo-overlay p { display: none !important; }
+  .menu-cta-wrap { margin-top: 48px !important; padding: 0 !important; width: 100% !important; justify-content: center !important; }
+  #kart .btn-primary { align-self: center !important; }
+  #kart [data-grid="two-col"] > div:first-child { align-items: center !important; text-align: center !important; }
+  #reviews [style*="margin-bottom:60px"] { margin-bottom: 36px !important; }
+  .review-card { padding: 24px 20px !important; }
 }
