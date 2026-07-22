@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiki Kafe | Premium Coffee Shop — Clinton Township, MI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="uploads/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Kiki Kafe is a premium coffee shop at The Mall at Partridge Creek in Clinton Township, MI. Handcrafted lattes, matcha, refreshers, pastries and more. Order online or visit us today.">
+<link rel="canonical" href="https://kikikafe.net/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kikikafe.net/">
+<meta property="og:site_name" content="Kiki Kafe">
+<meta property="og:title" content="Kiki Kafe | Premium Coffee Shop — Clinton Township, MI">
+<meta property="og:description" content="Handcrafted lattes, matcha, refreshers, and pastries at The Mall at Partridge Creek. Order online or visit us in Clinton Township, MI.">
+<meta property="og:image" content="https://kikikafe.net/uploads/kiki-header_test_v2.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kiki Kafe | Premium Coffee Shop — Clinton Township, MI">
+<meta name="twitter:description" content="Handcrafted lattes, matcha, refreshers, and pastries at The Mall at Partridge Creek. Order online or visit us in Clinton Township, MI.">
+<meta name="twitter:image" content="https://kikikafe.net/uploads/kiki-header_test_v2.png">
+<meta name="theme-color" content="#000000">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Kiki Kafe",
+  "description": "Premium coffee shop at The Mall at Partridge Creek in Clinton Township, MI. Handcrafted lattes, matcha, refreshers, pastries and more.",
+  "url": "https://kikikafe.net",
+  "telephone": "+15863006994",
+  "email": "mgmt@kikikafe.net",
+  "image": "https://kikikafe.net/uploads/kiki-header_test_v2.png",
+  "logo": "https://kikikafe.net/uploads/Kiki-Kafe_Logo_Traced_White.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "17370 Hall Rd Ste 107",
+    "addressLocality": "Clinton Township",
+    "addressRegion": "MI",
+    "postalCode": "48038",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.5868,
+    "longitude": -82.9267
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "21:00"
+    }
+  ],
+  "hasMenu": "https://kikikafe.net/menu.html",
+  "servesCuisine": ["Coffee","Espresso","Matcha","Pastries"],
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.instagram.com/meetmeatkiki",
+    "https://www.tiktok.com/@meetmeatkiki"
+  ]
+}
+</script>
+<style>
+  @media (max-width: 900px) {
+    [data-grid="menu"] { grid-template-columns: repeat(2, 1fr) !important; }
+    [data-grid="two-col"] { grid-template-columns: 1fr !important; gap: 48px !important; }
+    [data-grid="location-info"] { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 560px) {
+    [data-grid="menu"] { grid-template-columns: 1fr !important; }
+    #top { padding: 116px 5vw 60px !important; }
+    #menu { padding: 72px 5vw !important; }
+    #kart { padding: 72px 5vw !important; }
+    #location { padding: 72px 5vw !important; }
+    #faq { padding: 72px 5vw !important; }
+    #kart, #faq { background-attachment: scroll !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HOURS BANNER ===== -->
+<div id="hours-banner">
+  <p>Mon – Fri &nbsp;<span class="banner-hours">10am – 8pm</span>&nbsp;&nbsp;·&nbsp;&nbsp;Sat – Sun &nbsp;<span class="banner-hours">10am – 9pm</span><span class="banner-loc">&nbsp;&nbsp;·&nbsp;&nbsp;The Mall at Partridge Creek, Clinton Township</span></p>
+</div>
+
+<!-- ===== NAV ===== -->
+<header id="site-header" style="position:fixed; top:34px; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:22px 6vw; background:transparent; transition:background .4s ease, padding .4s ease, border-color .4s ease; border-bottom:1px solid rgba(255,255,255,0);">
+  <a href="#top" style="display:flex; align-items:center; text-decoration:none;">
+    <img id="header-logo" src="uploads/Kiki-Kafe_Logo_Traced_White.png" alt="Kiki Kafe" style="height:58px; width:auto; display:block;">
+  </a>
+  <nav style="display:flex; align-items:center; gap:32px;">
+    <div data-nav-text style="display:flex; align-items:center; gap:42px;">
+      <a href="#location" class="nav-link" style="text-decoration:none; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase;">Contact</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">More <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav-dropdown-menu">
+          <a href="book-kart.html" class="nav-dropdown-item">Book Kiki Kart</a>
+          <a href="franchise.html" class="nav-dropdown-item">Franchise</a>
+          <a href="apply.html" class="nav-dropdown-item">Apply</a>
+        </div>
+      </div>
+    </div>
+    <div data-nav-social style="display:flex; align-items:center; gap:16px;">
+      <a href="https://www.instagram.com/meetmeatkiki" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@meetmeatkiki" target="_blank" rel="noopener" class="social-icon" aria-label="TikTok">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.89a8.27 8.27 0 004.84 1.54V6.97a4.85 4.85 0 01-1.07-.28z"/></svg>
+      </a>
+    </div>
+    <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="btn-order" style="text-decoration:none; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; padding:11px 22px; border:1px solid #4d8145; border-radius:1px; white-space:nowrap;">Order&nbsp;Online</a>
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="top" style="position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:160px 6vw 80px; background-color:#000;">
+  <video autoplay muted loop playsinline style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+    <source src="uploads/Web-Banner-Video.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.5) 40%, rgba(0,0,0,.82) 100%); z-index:1;"></div>
+  <div style="position:absolute; inset:0; background:radial-gradient(ellipse 70% 60% at 50% 45%, transparent 0%, rgba(0,0,0,.45) 100%); pointer-events:none; z-index:1;"></div>
+  <div style="position:relative; z-index:2; max-width:900px; display:flex; flex-direction:column; align-items:center; gap:26px;">
+    <span style="font-size:11px; font-weight:500; letter-spacing:.36em; text-transform:uppercase; color:rgba(255,255,255,.45);">The Mall At Partridge Creek</span>
+    <h1 style="margin:0; line-height:0;">
+      <img src="uploads/Meet-Me-At-Kiki_v2.png" alt="Meet Me At Kiki" style="width:min(620px,82vw); height:auto; display:block;">
+    </h1>
+    <p style="margin:0; font-family:'Inter',sans-serif; font-weight:300; font-size:16px; color:rgba(255,255,255,.55); letter-spacing:.01em;">Premium coffee, handcrafted daily.</p>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; margin-top:14px;">
+      <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none; min-width:200px; text-align:center; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 34px; border:1px solid #4d8145; border-radius:1px;">Order Now</a>
+    </div>
+  </div>
+  <div style="position:absolute; bottom:0; left:0; right:0; height:35%; background:linear-gradient(to bottom, transparent, #000); z-index:1; pointer-events:none;"></div>
+  <div style="position:absolute; bottom:15px; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.3); z-index:2;">
+    <svg width="44" height="26" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L11 11L21 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</section>
+
+<!-- ===== MENU HIGHLIGHTS ===== -->
+<section id="menu" style="padding:130px 0 0; background:#000;">
+  <div class="reveal" style="text-align:center; margin-bottom:70px; padding:0 6vw; display:flex; flex-direction:column; align-items:center; gap:18px;">
+    <h2 style="margin:0; font-weight:300; font-size:clamp(28px,4vw,44px); letter-spacing:.18em; text-transform:uppercase; color:#fff;">Specialty Coffee, Drinks & Food</h2>
+    <p style="margin:0; font-weight:300; font-size:15px; color:rgba(255,255,255,.5);">A few of our favorites — explore the full lineup on the menu.</p>
+  </div>
+  <div class="menu-scroll-wrap reveal">
+
+    <button class="menu-arrow prev" id="menu-prev" aria-label="Previous">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+
+    <div data-grid="menu-photo" id="menu-track" style="display:flex; gap:5px; padding:0 5vw; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory;">
+
+      <a href="menu.html#espresso-bar" class="menu-photo-item">
+        <img src="uploads/menu/espresso.jpg" alt="Espresso Bar at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Espresso Bar</span><p>Lattes, cappuccinos & signature espresso drinks</p></div>
+      </a>
+
+      <a href="menu.html#matcha" class="menu-photo-item">
+        <img src="uploads/menu/matcha.jpg" alt="Matcha at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Matcha</span><p>Ceremonial-grade green tea, iced or hot</p></div>
+      </a>
+
+      <a href="menu.html#refreshers" class="menu-photo-item">
+        <img src="uploads/menu/refresher.jpg" alt="Refreshers at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Refreshers</span><p>Fruit-forward iced coolers, lightly caffeinated</p></div>
+      </a>
+
+      <a href="menu.html#redbull-infusions" class="menu-photo-item">
+        <img src="uploads/menu/redbull.jpg" alt="Red Bull Infusions at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Red Bull Infusions</span><p>Energy drinks blended with fruit & bold flavors</p></div>
+      </a>
+
+      <a href="menu.html#sandwiches" class="menu-photo-item">
+        <img src="uploads/menu/sandwich.jpg" alt="Sandwiches at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Sandwiches</span><p>Pressed paninis & fresh-built bites on artisan bread</p></div>
+      </a>
+
+      <a href="menu.html#pastries" class="menu-photo-item">
+        <img src="uploads/menu/pastries.jpg" alt="Pastries at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Pastries</span><p>Croissants & laminated favorites, baked fresh daily</p></div>
+      </a>
+
+      <a href="menu.html#desserts" class="menu-photo-item">
+        <img src="uploads/menu/desserts.jpg" alt="Desserts at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Desserts</span><p>Cheesecake, cake pops & indulgent sweet bites</p></div>
+      </a>
+
+      <a href="menu.html#acai-bowls" class="menu-photo-item">
+        <img src="uploads/menu/acai-bowls.jpg" alt="Acaí Bowls at Kiki Kafe" loading="lazy">
+        <div class="menu-photo-overlay"><span>Acaí Bowls</span><p>Fresh acaí topped with fruit, granola & honey</p></div>
+      </a>
+
+    </div>
+
+    <button class="menu-arrow next" id="menu-next" aria-label="Next">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+
+  </div>
+  <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:14px; margin-top:56px; padding:0 6vw 130px;">
+    <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none; text-align:center; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 40px; border:1px solid #4d8145; border-radius:1px;">Order Online</a>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews" style="padding:130px 6vw; background:url('uploads/Kiki-Coffee-Bean_BG_Light.jpg') center/cover fixed;">
+  <div style="max-width:1180px; margin:0 auto;">
+
+    <div class="reveal" style="text-align:center; margin-bottom:60px; display:flex; flex-direction:column; align-items:center; gap:14px;">
+      <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Google">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>
+      <div style="font-size:20px; letter-spacing:4px; color:#e6a800;">★★★★★</div>
+      <span style="font-size:11px; font-weight:500; letter-spacing:.34em; text-transform:uppercase; color:#4d8145;">Reviews</span>
+      <h2 style="margin:0; font-weight:300; font-size:clamp(28px,4vw,44px); letter-spacing:.18em; text-transform:uppercase; color:#111;">What People Are Saying</h2>
+    </div>
+
+    <div class="reveal">
+
+      <div id="review-track" style="display:flex; align-items:stretch; gap:20px; padding:0 5vw; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; scrollbar-width:none;">
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"The coffee here is amazing. I always get their cookie butter iced latte. But their sandwiches... are amazing!!! Every time I come here, I always get their Smoke Bird sandwich. Hospitality is amazing, service is amazing, and their seating is perfect. It's my favorite study place."</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">Randal S.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"This place is 10/10!! The vibes in this cafe are unreal and feels like home. We tried the Kiki special hot latte, ice brown sugar shaken espresso, 3 of the refreshers and couldn't choose which one was my favorite. Everything here was amazing."</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">MaryAnn N.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"I love this place! The staff is always so friendly, the drinks are great, and it's beautifully decorated. Tony took great care of us. Got the oat milk brown butter draft latte which was heavenly and the caramelized banana latte was sooo good. Let's go Kiki 😎 10/10"</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">Corey R.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"A 10/10 experience at KIKI KAFÉ! This local casual spot has a beautiful cozy ambiance, plenty of comfortable seating, and FANTASTIC customer service. The Oat draft and honey turkey on sourdough sandwich were delicious and beautifully presented. A wonderful addition to Clinton Township. Highly recommend!"</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">Michael U.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"Habibi come to Kiki :) Was never a big fan of coffee, but Kiki has officially changed my mind. Truly the best coffee I have tried. They have many drink options and desserts!! The staff are amazing and always give you a good experience with their great attitude."</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">Dima I.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"Kiki Cafe has honestly become one of my favorite spots to go to. The owners are so sweet and actually take the time to talk to you and make you feel welcomed. The cafe is always really clean and cozy, and everything I've tried has been so good. I always enjoy coming here and definitely recommend it!"</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">Marina Y.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"Kiki Cafe is an absolute gem! The coffee is spot on, and the food was genuinely delicious. What really makes the experience special is the staff — so welcoming, with big bright smiles that make you feel right at home. There's also plenty of seating, creating a warm, relaxing environment. Highly recommend!"</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">John K.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card" style="background:#fff; border-color:#e0dbd4;">
+          <div style="font-size:17px; letter-spacing:3px; color:#e6a800;">★★★★★</div>
+          <p style="margin:0; font-weight:300; font-size:14px; line-height:1.85; color:rgba(0,0,0,.65);">"I usually do not write reviews, but this place is actually insane. Every single coffee drink I've gotten has been so good and the food is unreal. I would definitely give it a try and recommend it to everybody."</p>
+          <div style="margin-top:auto; padding-top:20px; border-top:1px solid #e0dbd4; display:flex; flex-direction:column; gap:3px;">
+            <span style="font-size:13px; font-weight:500; color:#111;">Ella R.</span>
+            <span style="font-size:10px; font-weight:400; letter-spacing:.1em; text-transform:uppercase; color:rgba(0,0,0,.4);">Google Review</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display:flex; justify-content:center; gap:12px; margin-top:32px;">
+        <button id="review-prev" class="menu-arrow" style="position:static; transform:none; background:#111; color:#fff;" aria-label="Previous review">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button id="review-next" class="menu-arrow" style="position:static; transform:none; background:#111; color:#fff;" aria-label="Next review">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="display:flex; justify-content:center; margin-top:52px;">
+      <a href="https://www.google.com/maps/search/Kiki+Kafe+Clinton+Township+MI" target="_blank" rel="noopener" class="btn-outline-gold" style="text-decoration:none; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 40px; border:1px solid #4d8145; border-radius:1px;">Read All Reviews on Google →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== KIKI KART ===== -->
+<section id="kart" style="background:#111; padding:130px 6vw;">
+  <div data-grid="two-col" style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center;">
+    <div class="reveal" style="display:flex; flex-direction:column; gap:24px;">
+      <span style="font-size:11px; font-weight:500; letter-spacing:.34em; text-transform:uppercase; color:#4d8145;">Mobile Coffee Experience</span>
+      <h2 style="margin:0; font-family:'Dancing Script',cursive; font-weight:700; font-size:clamp(44px,6vw,72px); line-height:1.05; color:#fff;">Bring Kiki To You</h2>
+      <p style="margin:0; font-weight:300; font-size:16px; line-height:1.75; color:rgba(255,255,255,.6); max-width:460px;">The Kiki Kart brings our full barista experience anywhere you need it. From intimate weddings to corporate gatherings and private events, we craft premium espresso, lattes, and matcha on-site — turning any occasion into a moment worth remembering.</p>
+      <a href="book-kart.html" class="btn-primary" style="align-self:flex-start; margin-top:8px; text-decoration:none; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 34px; border:1px solid #4d8145; border-radius:1px;">Book the Kart</a>
+    </div>
+    <div style="aspect-ratio:4/3; border:1px solid #333; border-radius:2px; overflow:hidden;">
+      <img src="uploads/kiki-kart.jpg" alt="The Kiki Kart serving coffee at an event" style="width:100%; height:100%; object-fit:cover; display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section id="location" style="padding:130px 6vw; background:url('uploads/Kiki-Coffee-Bean_BG_Light.jpg') center/cover fixed;">
+  <div style="max-width:860px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:56px; text-align:center;">
+
+    <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:14px;">
+      <span style="font-size:11px; font-weight:500; letter-spacing:.34em; text-transform:uppercase; color:rgba(0,0,0,.4);">Visit Us @</span>
+      <img src="uploads/partridge-creek-logo.svg" alt="The Mall at Partridge Creek" style="height:clamp(48px,6vw,68px); width:auto; display:block;">
+      <p style="margin:0; font-weight:300; font-size:16px; line-height:1.6; color:rgba(0,0,0,.6);">17370 Hall Rd Ste 107, Clinton Township, MI 48038</p>
+      <p style="margin:4px 0 0; font-weight:300; font-size:14px; color:rgba(0,0,0,.4);">Next to HopCat &amp; California Pizza Kitchen</p>
+    </div>
+
+    <div class="reveal reveal-d1" data-grid="location-info" style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; width:100%;">
+      <div style="background:#fff; border:1px solid #e0dbd4; border-radius:2px; padding:28px 20px; display:flex; flex-direction:column; gap:6px;">
+        <span style="font-size:10px; font-weight:500; letter-spacing:.26em; text-transform:uppercase; color:rgba(0,0,0,.4);">Phone</span>
+        <a href="tel:+15863006994" style="text-decoration:none; font-weight:300; font-size:16px; color:#111;">(586) 300-6994</a>
+      </div>
+      <div style="background:#fff; border:1px solid #e0dbd4; border-radius:2px; padding:28px 20px; display:flex; flex-direction:column; gap:6px;">
+        <span style="font-size:10px; font-weight:500; letter-spacing:.26em; text-transform:uppercase; color:rgba(0,0,0,.4);">Hours</span>
+        <span style="font-weight:300; font-size:15px; color:#111;">Mon–Fri · 10am–8pm</span>
+        <span style="font-weight:300; font-size:15px; color:#111;">Sat–Sun · 10am–9pm</span>
+      </div>
+      <div style="background:#fff; border:1px solid #e0dbd4; border-radius:2px; padding:28px 20px; display:flex; flex-direction:column; gap:6px;">
+        <span style="font-size:10px; font-weight:500; letter-spacing:.26em; text-transform:uppercase; color:rgba(0,0,0,.4);">Email</span>
+        <a href="mailto:mgmt@kikikafe.net" style="text-decoration:none; font-weight:300; font-size:15px; color:#111; word-break:break-all;">mgmt@kikikafe.net</a>
+      </div>
+    </div>
+
+    <a href="https://maps.google.com/maps?daddr=17370+Hall+Rd+Ste+107,+Clinton+Township,+MI+48038" target="_blank" rel="noopener" class="btn-ghost" style="text-decoration:none; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 40px; border:1px solid #4d8145; border-radius:1px; color:#000; background:#4d8145;">Get Directions →</a>
+
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" style="padding:130px 6vw; background:#111;">
+  <div style="max-width:780px; margin:0 auto;">
+    <div class="reveal" style="text-align:center; margin-bottom:64px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+      <span style="font-size:11px; font-weight:500; letter-spacing:.34em; text-transform:uppercase; color:#4d8145;">FAQ</span>
+      <h2 style="margin:0; font-weight:300; font-size:clamp(28px,4vw,44px); letter-spacing:.18em; text-transform:uppercase; color:#fff;">Common Questions</h2>
+    </div>
+    <div style="display:flex; flex-direction:column; background:#1a1a1a; border-radius:4px; padding:0 32px;">
+
+      <div class="faq-item" style="padding:24px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+          <span style="font-size:16px; font-weight:400; color:rgba(255,255,255,.85);">Where is Kiki Kafe located?</span>
+          <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
+        </div>
+        <div class="faq-answer">
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">We're inside The Mall at Partridge Creek — 17370 Hall Rd Ste 107, Clinton Township, MI 48038, next to HopCat and California Pizza Kitchen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="padding:24px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+          <span style="font-size:16px; font-weight:400; color:rgba(255,255,255,.85);">What are your hours?</span>
+          <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
+        </div>
+        <div class="faq-answer">
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">We're open Monday–Friday 10:00 AM – 8:00 PM, and Saturday–Sunday 10:00 AM – 9:00 PM.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="padding:24px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+          <span style="font-size:16px; font-weight:400; color:rgba(255,255,255,.85);">Can I order online?</span>
+          <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
+        </div>
+        <div class="faq-answer">
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">Yes! Order ahead through <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" style="color:#4d8145; text-decoration:none;">DoorDash</a> for delivery or pickup.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="padding:24px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+          <span style="font-size:16px; font-weight:400; color:rgba(255,255,255,.85);">Can I book the Kiki Kart for my event?</span>
+          <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
+        </div>
+        <div class="faq-answer">
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">Absolutely. The Kiki Kart is available for weddings, corporate events, and private gatherings. <a href="book-kart.html" style="color:#4d8145; text-decoration:none;">Book the Kart</a> or reach out at <a href="mailto:mgmt@kikikafe.net" style="color:#4d8145; text-decoration:none;">mgmt@kikikafe.net</a> to get started.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="padding:24px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+          <span style="font-size:16px; font-weight:400; color:rgba(255,255,255,.85);">Do you offer non-dairy milk options?</span>
+          <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
+        </div>
+        <div class="faq-answer">
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">Yes, we offer a variety of non-dairy milk alternatives. Ask your barista about the current options.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="padding:24px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+          <span style="font-size:16px; font-weight:400; color:rgba(255,255,255,.85);">Are you hiring?</span>
+          <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
+        </div>
+        <div class="faq-answer">
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">We're always looking for passionate people to join the team. <a href="apply.html" style="color:#4d8145; text-decoration:none;">Apply here</a> and we'll be in touch.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="padding:24px 0;">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:24px;">
+          <span style="font-size:16px; font-weight:400; color:rgba(255,255,255,.85);">How do I get in touch?</span>
+          <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
+        </div>
+        <div class="faq-answer">
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">Call us at <a href="tel:+15863006994" style="color:#4d8145; text-decoration:none;">(586) 300-6994</a> or email <a href="mailto:mgmt@kikikafe.net" style="color:#4d8145; text-decoration:none;">mgmt@kikikafe.net</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="border-top:1px solid #222; background:#000; padding:70px 6vw 32px;">
+  <div data-grid="footer" style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:1.2fr 1fr 1.2fr; gap:48px;">
+    <div style="display:flex; flex-direction:column; gap:18px; align-items:flex-start;">
+      <img src="uploads/Kiki-Kafe_Logo_Traced_White.png" alt="Kiki Kafe" style="height:72px; width:auto; display:block;">
+      <span style="font-family:'Dancing Script',cursive; font-weight:600; font-size:24px; color:rgba(255,255,255,.55);">Meet Me At Kiki</span>
+      <div style="display:flex; gap:16px; margin-top:4px;">
+        <a href="https://www.instagram.com/meetmeatkiki" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@meetmeatkiki" target="_blank" rel="noopener" class="social-icon" aria-label="TikTok">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.89a8.27 8.27 0 004.84 1.54V6.97a4.85 4.85 0 01-1.07-.28z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <a href="menu.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Menu</a>
+      <a href="#kart" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Kiki Kart</a>
+      <a href="book-kart.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Book the Kart</a>
+      <a href="#location" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Location</a>
+      <a href="franchise.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Franchise</a>
+      <a href="privacy.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Privacy Policy</a>
+      <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="footer-order-link" style="text-decoration:none; font-size:12px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#4d8145;">Order Online</a>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <span style="font-weight:300; font-size:14px; line-height:1.6; color:rgba(255,255,255,.6);">17370 Hall Rd Ste 107, Clinton Township, MI 48038</span>
+      <a href="tel:+15863006994" style="text-decoration:none; font-weight:300; font-size:14px; color:rgba(255,255,255,.6);">(586) 300-6994</a>
+      <a href="mailto:mgmt@kikikafe.net" style="text-decoration:none; font-weight:300; font-size:14px; color:rgba(255,255,255,.6);">mgmt@kikikafe.net</a>
+    </div>
+  </div>
+  <div style="max-width:1180px; margin:48px auto 0; padding-top:24px; border-top:1px solid #1a1a1a; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+    <span style="font-size:11px; color:rgba(255,255,255,.35); letter-spacing:.04em;">© 2026 Kiki Kafe. All rights reserved.</span>
+    <a href="https://www.trocino.media/" target="_blank" rel="noopener" style="text-decoration:none; font-size:11px; color:rgba(255,255,255,.35); letter-spacing:.1em; text-transform:uppercase;">Designed by TrocinoMedia</a>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    item.addEventListener('click', function () {
+      item.classList.toggle('open');
+    });
+  });
+
+  (function () {
+    var header = document.getElementById('site-header');
+    function onScroll() {
+      var mobile = window.innerWidth <= 560;
+      if (window.scrollY > 40) {
+        header.style.background = '#000';
+        header.style.borderBottomColor = 'rgba(255,255,255,0.08)';
+        header.style.padding = mobile ? '10px 5vw' : '16px 6vw';
+      } else {
+        header.style.background = 'transparent';
+        header.style.borderBottomColor = 'rgba(255,255,255,0)';
+        header.style.padding = mobile ? '14px 5vw' : '22px 6vw';
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  (function () {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  })();
+</script>
+
+
+<!-- ===== MOBILE MENU ===== -->
+<div id="mobile-menu">
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:18px 0 44px;">
+    <a href="#top" style="text-decoration:none;">
+      <img src="uploads/Kiki-Kafe_Logo_Traced_White.png" alt="Kiki Kafe" style="height:44px; width:auto; display:block;">
+    </a>
+    <button class="hamburger open" id="mobile-close" aria-label="Close menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav>
+    <a href="#location" class="mobile-nav-link">Contact</a>
+    <a href="book-kart.html" class="mobile-nav-link">Book Kiki Kart</a>
+    <a href="franchise.html" class="mobile-nav-link">Franchise</a>
+    <a href="apply.html" class="mobile-nav-link">Apply</a>
+  </nav>
+  <div style="margin-top:40px; display:flex; flex-direction:column; gap:24px;">
+    <div style="display:flex; gap:14px;">
+      <a href="https://www.instagram.com/meetmeatkiki" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" style="width:46px; height:46px; border:1px solid #2a2a2a; border-radius:2px; display:flex; align-items:center; justify-content:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@meetmeatkiki" target="_blank" rel="noopener" class="social-icon" aria-label="TikTok" style="width:46px; height:46px; border:1px solid #2a2a2a; border-radius:2px; display:flex; align-items:center; justify-content:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.89a8.27 8.27 0 004.84 1.54V6.97a4.85 4.85 0 01-1.07-.28z"/></svg>
+      </a>
+    </div>
+    <a href="https://www.doordash.com/en/store/kiki-kafe-clinton-township-35180447" target="_blank" rel="noopener" class="mobile-cta-link">Order Online</a>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var track = document.getElementById('review-track');
+    var prev  = document.getElementById('review-prev');
+    var next  = document.getElementById('review-next');
+    function stepSize() { var c = track.querySelector('[style*="min-width"]'); return c ? c.offsetWidth + 20 : 400; }
+    function atEnd()   { return track.scrollLeft >= track.scrollWidth - track.clientWidth - 4; }
+    function atStart() { return track.scrollLeft <= 4; }
+    next.addEventListener('click', function () {
+      if (atEnd()) { track.scrollTo({ left: 0, behavior: 'smooth' }); }
+      else         { track.scrollBy({ left:  stepSize(), behavior: 'smooth' }); }
+    });
+    prev.addEventListener('click', function () {
+      if (atStart()) { track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' }); }
+      else           { track.scrollBy({ left: -stepSize(), behavior: 'smooth' }); }
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var track = document.getElementById('menu-track');
+    var prev  = document.getElementById('menu-prev');
+    var next  = document.getElementById('menu-next');
+
+    function stepSize() {
+      var item = track.querySelector('.menu-photo-item');
+      return item ? (item.offsetWidth + 5) * 2 : 600;
+    }
+
+    function atEnd()   { return track.scrollLeft >= track.scrollWidth - track.clientWidth - 4; }
+    function atStart() { return track.scrollLeft <= 4; }
+
+    next.addEventListener('click', function () {
+      if (atEnd()) { track.scrollTo({ left: 0, behavior: 'smooth' }); }
+      else         { track.scrollBy({ left:  stepSize(), behavior: 'smooth' }); }
+    });
+    prev.addEventListener('click', function () {
+      if (atStart()) { track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' }); }
+      else           { track.scrollBy({ left: -stepSize(), behavior: 'smooth' }); }
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('hamburger-btn');
+    var menu = document.getElementById('mobile-menu');
+    var close = document.getElementById('mobile-close');
+    function openMenu() { menu.classList.add('open'); btn.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { menu.classList.remove('open'); btn.classList.remove('open'); document.body.style.overflow = ''; }
+    btn.addEventListener('click', openMenu);
+    close.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+  })();
+</script>
+
+</body>
+</html>
