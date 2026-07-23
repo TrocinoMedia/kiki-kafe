@@ -25,6 +25,9 @@ module.exports = async function handler(req, res) {
   } else if (form === 'apply') {
     subject = `Job Application — ${d['First Name'] || ''} ${d['Last Name'] || ''}`.trim();
     html = applyEmail(d);
+  } else if (form === 'contact') {
+    subject = `${d['Subject'] || 'New Message'} — ${d['First Name'] || ''} ${d['Last Name'] || ''}`.trim();
+    html = contactEmail(d);
   } else {
     subject = 'New Form Submission — Kiki Kafe';
     html = genericEmail(d);
@@ -199,6 +202,21 @@ function applyEmail(d) {
     section('Their Message',
       field('Why Kiki Kafe?', v(d,'Why Kiki Kafe')) +
       resumeRow
+    )
+  );
+}
+
+// ─── Contact email ────────────────────────────────────────────────────────────
+
+function contactEmail(d) {
+  return wrap('New Message',
+    section('From',
+      fieldPair('First Name', v(d,'First Name'), 'Last Name', v(d,'Last Name')) +
+      field('Email', v(d,'Email'))
+    ) +
+    section('Message',
+      field('Subject', v(d,'Subject')) +
+      field('Message', v(d,'Message'))
     )
   );
 }
