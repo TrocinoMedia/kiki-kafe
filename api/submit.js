@@ -33,14 +33,20 @@ module.exports = async function handler(req, res) {
     html = genericEmail(d);
   }
 
+  const emailParams = {
+    from: `Kiki Kafe <${FROM}>`,
+    to: TO,
+    reply_to: d['Email'] || undefined,
+    subject,
+    html,
+  };
+
+  if (form === 'apply' && d._resumeBase64 && d._resumeFilename) {
+    emailParams.attachments = [{ filename: d._resumeFilename, content: d._resumeBase64 }];
+  }
+
   try {
-    await resend.emails.send({
-      from: `Kiki Kafe <${FROM}>`,
-      to: TO,
-      reply_to: d['Email'] || undefined,
-      subject,
-      html,
-    });
+    await resend.emails.send(emailParams);
     res.status(200).json({ success: true });
   } catch (err) {
     console.error(err);
@@ -186,8 +192,8 @@ function franchiseEmail(d) {
 // ─── Apply email ──────────────────────────────────────────────────────────────
 
 function applyEmail(d) {
-  const resumeRow = v(d,'Resume Link') !== '—'
-    ? field('Resume Link', `<a href="${v(d,'Resume Link')}" style="color:#4d8145;">${v(d,'Resume Link')}</a>`)
+  const resumeRow = d._resumeFilename
+    ? field('Resume', `Attached: ${d._resumeFilename}`)
     : '';
   return wrap('New Job Application',
     section('Applicant',

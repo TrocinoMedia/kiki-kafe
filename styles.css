@@ -181,6 +181,9 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
 .checkbox-label input[type="checkbox"] { width: 18px; height: 18px; min-width: 18px; padding: 0; accent-color: #4d8145; cursor: pointer; }
 .btn-submit { background: #4d8145; color: #000; border: 1px solid #4d8145; border-radius: 1px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; padding: 16px 40px; cursor: pointer; transition: background .25s, transform .25s; }
 .btn-submit:hover { background: #5e9e55; transform: translateY(-2px); }
+.file-picker { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border: 1px dashed rgba(0,0,0,.2); border-radius: 1px; cursor: pointer; color: rgba(0,0,0,.4); font-size: 13px; font-weight: 300; background: rgba(0,0,0,.02); transition: border-color .2s, color .2s; }
+.file-picker:hover { border-color: #4d8145; color: #4d8145; }
+.file-picker.has-file { border-color: #4d8145; border-style: solid; color: #111; }
 .section-divider { display: flex; flex-direction: column; gap: 6px; padding-top: 8px; padding-bottom: 28px; border-bottom: 1px solid #e0dbd4; }
 .section-label { font-size: 11px; font-weight: 500; letter-spacing: .34em; text-transform: uppercase; color: #4d8145; }
 
