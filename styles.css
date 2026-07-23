@@ -76,6 +76,10 @@ body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-seri
 .footer-nav-link:hover { color: #fff !important; }
 .footer-order-link { transition: opacity .25s; }
 .footer-order-link:hover { opacity: .7; }
+.btn-footer-contact { transition: background .25s, color .25s, border-color .25s; }
+.btn-footer-contact:hover { background: rgba(255,255,255,.1) !important; color: #fff !important; border-color: rgba(255,255,255,.5) !important; }
+#contact-modal-close { transition: color .25s; }
+#contact-modal-close:hover { color: rgba(0,0,0,.7) !important; }
 
 /* Logo */
 img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
