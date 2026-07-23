@@ -60,8 +60,10 @@ body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-seri
 /* Buttons */
 .btn-primary { transition: background .25s, transform .25s; }
 .btn-primary:hover { background: #5e9e55 !important; transform: translateY(-2px); }
-.btn-ghost { transition: background .25s, transform .25s; }
-.btn-ghost:hover { background: #5e9e55 !important; transform: translateY(-2px); }
+.btn-ghost { transition: background .25s, color .25s, border-color .25s, transform .25s; }
+.btn-ghost:hover { background: #5e9e55 !important; color: #fff !important; border-color: #5e9e55 !important; transform: translateY(-2px); }
+.btn-directions { background: #4d8145; color: #000; border: 1px solid #4d8145; transition: background .25s, border-color .25s, transform .25s; }
+.btn-directions:hover { background: #5e9e55; border-color: #5e9e55; transform: translateY(-2px); }
 
 /* Cards */
 .menu-card { transition: transform .3s ease, border-color .3s ease; }
