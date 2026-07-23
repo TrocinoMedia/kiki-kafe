@@ -188,7 +188,8 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
 .section-label { font-size: 11px; font-weight: 500; letter-spacing: .34em; text-transform: uppercase; color: #4d8145; }
 
 @media (max-width: 900px) {
-  [data-grid="footer"] { grid-template-columns: 1fr !important; gap: 36px !important; }
+  [data-grid="footer"] { grid-template-columns: 1fr 1fr !important; gap: 32px 24px !important; }
+  [data-grid="footer"] > div:last-child { grid-column: 1 / -1; padding-top: 28px; border-top: 1px solid #1a1a1a; }
   [data-grid="reviews"] { grid-template-columns: 1fr !important; }
   [data-grid="menu"] { grid-template-columns: repeat(2, 1fr) !important; }
   [data-grid="two-col"] { grid-template-columns: 1fr !important; gap: 48px !important; }
@@ -289,6 +290,8 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
   #site-header { padding: 14px 5vw !important; }
   #header-logo { height: 50px; }
   footer { padding: 56px 5vw 24px !important; }
+  [data-grid="footer"] img[src*="Kiki-Logo"] { height: 72px !important; }
+  [data-grid="footer"] img[src*="meet-me-at-kiki"] { width: 180px !important; }
   /* Prevent iOS Safari from zooming on input focus */
   input, select, textarea { font-size: 16px !important; }
   /* Stack form rows on small screens */
