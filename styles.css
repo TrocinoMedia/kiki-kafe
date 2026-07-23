@@ -183,7 +183,8 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
   [data-grid="reviews"] { grid-template-columns: 1fr !important; }
   [data-grid="menu"] { grid-template-columns: repeat(2, 1fr) !important; }
   [data-grid="two-col"] { grid-template-columns: 1fr !important; gap: 48px !important; }
-  [data-grid="location-info"] { grid-template-columns: 1fr !important; }
+  [data-grid="location"] { grid-template-columns: 1fr !important; gap: 40px !important; }
+  [data-grid="location-info"] { grid-template-columns: 1fr 1fr !important; }
   .form-row-3 { grid-template-columns: 1fr 1fr !important; }
 }
 @media (max-width: 640px) {

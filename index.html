@@ -324,29 +324,39 @@
 </section>
 
 <!-- ===== LOCATION ===== -->
-<section id="location" style="padding:130px 6vw; background:url('uploads/Kiki-Coffee-Bean_BG_Light.jpg') center/cover fixed;">
-  <div style="max-width:860px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:56px; text-align:center;">
+<section id="location" style="padding:100px 6vw; background:url('uploads/Kiki-Coffee-Bean_BG_Light.jpg') center/cover fixed;">
+  <div data-grid="location" style="max-width:1160px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
 
-    <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:14px;">
-      <span style="font-size:11px; font-weight:500; letter-spacing:.34em; text-transform:uppercase; color:rgba(0,0,0,.4);">Visit Us @</span>
-      <img src="uploads/partridge-creek-logo.svg" alt="The Mall at Partridge Creek" style="height:clamp(48px,6vw,68px); width:auto; display:block;">
-      <p style="margin:0; font-weight:300; font-size:16px; line-height:1.6; color:rgba(0,0,0,.6);">17370 Hall Rd Ste 107, Clinton Township, MI 48038</p>
-      <p style="margin:4px 0 0; font-weight:300; font-size:14px; color:rgba(0,0,0,.4);">Next to HopCat &amp; California Pizza Kitchen</p>
+    <!-- Map -->
+    <div class="reveal" style="border-radius:4px; overflow:hidden; box-shadow:0 4px 32px rgba(0,0,0,.12);">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d733.920300188347!2d-82.94839363821244!3d42.62571673192556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dfda7caa2d97%3A0x6a7cdface83f5beb!2sKIKI%20KAF%C3%89!5e0!3m2!1sen!2sus!4v1784764868008!5m2!1sen!2sus" width="100%" height="440" style="display:block; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
 
-    <div class="reveal reveal-d1" data-grid="location-info" style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; width:100%;">
-      <div style="background:#fff; border:1px solid #e0dbd4; border-radius:2px; padding:28px 20px; display:flex; flex-direction:column; gap:6px;">
-        <span style="font-size:10px; font-weight:500; letter-spacing:.26em; text-transform:uppercase; color:rgba(0,0,0,.4);">Phone</span>
-        <a href="tel:+15863006994" style="text-decoration:none; font-weight:300; font-size:16px; color:#111;">(586) 300-6994</a>
-      </div>
-      <div style="background:#fff; border:1px solid #e0dbd4; border-radius:2px; padding:28px 20px; display:flex; flex-direction:column; gap:6px;">
-        <span style="font-size:10px; font-weight:500; letter-spacing:.26em; text-transform:uppercase; color:rgba(0,0,0,.4);">Hours</span>
-        <span style="font-weight:300; font-size:15px; color:#111;">Mon–Fri · 10am–8pm</span>
-        <span style="font-weight:300; font-size:15px; color:#111;">Sat–Sun · 10am–9pm</span>
-      </div>
-    </div>
+    <!-- Info -->
+    <div class="reveal reveal-d1" style="display:flex; flex-direction:column; gap:32px;">
 
-    <a href="https://maps.google.com/maps?daddr=17370+Hall+Rd+Ste+107,+Clinton+Township,+MI+48038" target="_blank" rel="noopener" class="btn-ghost" style="text-decoration:none; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 40px; border:1px solid #4d8145; border-radius:1px; color:#000; background:#4d8145;">Get Directions →</a>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <span style="font-size:11px; font-weight:500; letter-spacing:.34em; text-transform:uppercase; color:rgba(0,0,0,.4);">Visit Us @</span>
+        <img src="uploads/partridge-creek-logo.svg" alt="The Mall at Partridge Creek" style="height:clamp(44px,5vw,60px); width:auto; display:block;">
+        <p style="margin:0; font-weight:300; font-size:16px; line-height:1.6; color:rgba(0,0,0,.6);">17370 Hall Rd Ste 107, Clinton Township, MI 48038</p>
+        <p style="margin:0; font-weight:300; font-size:14px; color:rgba(0,0,0,.4);">Next to HopCat &amp; California Pizza Kitchen</p>
+      </div>
+
+      <div data-grid="location-info" style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div style="background:#fff; border:1px solid #e0dbd4; border-radius:2px; padding:24px 20px; display:flex; flex-direction:column; gap:6px;">
+          <span style="font-size:10px; font-weight:500; letter-spacing:.26em; text-transform:uppercase; color:rgba(0,0,0,.4);">Phone</span>
+          <a href="tel:+15863006994" style="text-decoration:none; font-weight:300; font-size:15px; color:#111;">(586) 300-6994</a>
+        </div>
+        <div style="background:#fff; border:1px solid #e0dbd4; border-radius:2px; padding:24px 20px; display:flex; flex-direction:column; gap:6px;">
+          <span style="font-size:10px; font-weight:500; letter-spacing:.26em; text-transform:uppercase; color:rgba(0,0,0,.4);">Hours</span>
+          <span style="font-weight:300; font-size:14px; color:#111;">Mon–Fri · 10am–8pm</span>
+          <span style="font-weight:300; font-size:14px; color:#111;">Sat–Sun · 10am–9pm</span>
+        </div>
+      </div>
+
+      <a href="https://maps.google.com/maps?daddr=17370+Hall+Rd+Ste+107,+Clinton+Township,+MI+48038" target="_blank" rel="noopener" style="text-decoration:none; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 40px; border:1px solid #4d8145; border-radius:1px; color:#000; background:#4d8145; display:inline-block; text-align:center;">Get Directions →</a>
+
+    </div>
 
   </div>
 </section>
