@@ -111,7 +111,7 @@ img[src*="Kiki-Logo.svg"] { filter: brightness(0) invert(1); }
   transition: background .2s ease, color .2s ease, transform .2s ease, opacity .25s ease;
 }
 .menu-arrow:hover { background: #4d8145; color: #fff; transform: scale(1.1); }
-#review-prev:hover, #review-next:hover { transform: scale(1.1); }
+#review-prev, #review-next { background: #111; color: #fff; }
 .menu-arrow.hidden { opacity: 0; pointer-events: none; }
 @media (max-width: 560px) {
   .menu-arrow { width: 40px; height: 40px; }
