@@ -3,7 +3,7 @@ const { Resend } = require('resend');
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const FROM = process.env.FROM_EMAIL || 'onboarding@resend.dev';
-const TO = 'tony@trocino.media';
+const TO = ['tony@trocino.media', 'mgmt@kikikafe.net'];
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -46,10 +46,15 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    await resend.emails.send(emailParams);
+    const { data, error } = await resend.emails.send(emailParams);
+    if (error) {
+      console.error('Resend error:', JSON.stringify(error));
+      return res.status(500).json({ error: 'Failed to send email' });
+    }
+    console.log('Resend success:', data?.id);
     res.status(200).json({ success: true });
   } catch (err) {
-    console.error(err);
+    console.error('Unexpected error:', err);
     res.status(500).json({ error: 'Failed to send email' });
   }
 };
