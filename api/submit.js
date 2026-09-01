@@ -3,7 +3,7 @@ const { Resend } = require('resend');
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const FROM = process.env.FROM_EMAIL || 'onboarding@resend.dev';
-const TO = 'tony@trocino.media';
+const TO = 'mgmt@kikikafe.net';
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
